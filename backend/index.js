@@ -6,7 +6,7 @@ import authRoutes from "./routes/auth.route.js";
 const app = express();
 dotenv.config();
 
-const port = process.env.PORT
+const port = process.env.PORT || "5000"
 
 app.get("/", (req,res)=>{
     res.send("Hello world!")
